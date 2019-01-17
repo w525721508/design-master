@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="onClickListener"
+            type="android.view.View.OnClickListener"/>
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white_caocao"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+
+        <include
+            android:id="@+id/ic"
+            layout="@layout/title"
+            android:background="@drawable/up_down_line_gray"></include>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="我的"/>
+
+
+    </LinearLayout>
+
+
+</layout>

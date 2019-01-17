@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable
+            name="onClickListener"
+            type="design.root.base.util.OnClickListener"></variable>
+    </data>
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                 android:layout_width="match_parent"
+                                                 android:layout_height="60dp">
+
+        <TextView
+            android:id="@+id/tx"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingLeft="@dimen/all_padding"
+            android:text="123"/>
+
+
+    </android.support.constraint.ConstraintLayout>
+</layout>

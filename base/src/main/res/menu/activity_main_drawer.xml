@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Import"/>
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Gallery"/>
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Slideshow"/>
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Tools"/>
+    </group>
+
+    <item android:title="System">
+        <menu>
+            <item
+                android:id="@+id/nav_chage_pwd"
+                android:icon="@mipmap/pwd"
+                android:title="@string/change_the_password"/>
+            <item
+                android:id="@+id/nav_check_update"
+                android:icon="@mipmap/update"
+                android:title="@string/check_update"/>
+            <item
+                android:id="@+id/nav_log_out"
+                android:icon="@mipmap/log_out"
+                android:title="@string/log_out"/>
+        </menu>
+    </item>
+
+</menu>

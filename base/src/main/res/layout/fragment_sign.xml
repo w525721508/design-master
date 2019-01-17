@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="onClickListener"
+            type="android.view.View.OnClickListener"/>
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white_caocao"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/all_bounced_padding">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:gravity="center|bottom">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/logo"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/et_height"
+                android:layout_marginTop="@dimen/et_margin_logo">
+
+                <EditText
+                    android:id="@+id/et_phone"
+                    style="@style/editText"
+                    android:digits="1234567890"
+                    android:drawableLeft="@mipmap/login_username1"
+                    android:drawablePadding="@dimen/all_padding"
+                    android:ems="10"
+                    android:hint="@string/login_et_username_hint"
+                    android:inputType="phone"
+                    android:maxLength="11"
+                    android:text="1"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_down"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/all_margin_left"
+                    android:gravity="center"
+                    android:onClick="@{onClickListener}"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/et_padding"
+                    android:paddingRight="@dimen/et_padding">
+
+                    <ImageView
+                        android:id="@+id/iv_down"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/createstore_drop_down"/>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/et_pwd"
+                style="@style/editText"
+                android:layout_marginTop="@dimen/et_margin_edittext"
+                android:digits="1234567890"
+                android:drawableLeft="@mipmap/login_pwd01"
+                android:drawablePadding="@dimen/all_padding"
+                android:ems="10"
+                android:hint="@string/login_et_password_hint"
+                android:inputType="textPassword"
+                android:maxLength="16"
+                android:text="10086"/>
+
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/all_margin_left"
+                android:layout_marginRight="@dimen/all_margin_left"
+                android:layout_marginTop="@dimen/et_margin_logo"
+                android:background="@drawable/red_border"
+                android:imeOptions="actionDone"
+                android:onClick="@{onClickListener}"
+                android:text="@string/login_signinfragmentfragment_btn_login"
+                android:textColor="@color/white_caocao"
+                android:textSize="@dimen/et_textsize"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/all_margin_left"
+                android:layout_marginRight="@dimen/all_margin_left"
+                android:layout_marginTop="@dimen/et_margin_logo">
+
+                <TextView
+                    android:id="@+id/tv_signUp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="@{onClickListener}"
+                    android:text="注册 >"
+                    android:textColor="@color/black_baozheng"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_forgotPassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:onClick="@{onClickListener}"
+                    android:text="忘记密码 ？"
+                    android:textColor="@color/black_baozheng"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</layout>

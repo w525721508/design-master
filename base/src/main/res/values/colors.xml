@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="title_view_color">@color/colorPrimary</color>
+
+
+    <color name="red_guanyu">#b4282d</color>
+    <color name="red_xishi">#e57b7b</color>
+    <color name="red_diaochan">#ff8964</color>
+    <color name="red_lvzhi">#a22929</color>
+    <color name="color_f8f8f8">#F8F8F8</color>
+    <color name="gray_zhouyu">#f6f6f6</color>
+    <color name="color_feb800">#FEB800</color>
+    <color name="gray_huanggai">#afb9c3</color>
+    <color name="gray_kongming">#dddddd</color>
+    <color name="color_666666">#666666</color>
+    <color name="white_caocao">#ffffff</color>    <color name="color_333333">#333333</color>
+
+    <color name="black_zhangfei">#233142</color>
+    <color name="black_baozheng">#121212</color>
+    <color name="black_likui">#646464</color>
+
+    <color name="blue_yuefei">#50c1ff</color>
+    <color name="blue_mawu">#3f75a2</color>
+
+    <color name="green_chengyaojin">#088b38</color>
+    <color name="green_kongrong">#35ba6a</color>
+
+    <color name="orange_shixiu">#e88108</color>
+
+    <color name="cyan_sunquan">#b6cadb</color>
+    <color name="cyan_liubei">#47dade</color>
+
+    <color name="yellow_huangxin">#ffc960</color>
+
+    <color name="golden_yuji">#f2e7d3</color>
+
+    <color name="purple_yanqing">#6590e6</color>
+    <color name="hint">#DCDCDC</color>
+
+    <!-- 半透明 -->
+    <color name="background_dialog">#99000000</color>
+    <!-- 全透明 -->
+    <color name="all_transparent">#00000000</color>
+</resources>

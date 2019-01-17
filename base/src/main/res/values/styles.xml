@@ -1,0 +1,114 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+    <style name="dialog_title">
+        <item name="android:background">@color/white_caocao</item>
+        <item name="android:textSize">@dimen/big_text_size</item>
+        <item name="android:textColor">@color/black_baozheng</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/dialog_padding</item>
+    </style>
+
+    <style name="ThemeHolo" parent="android:Theme">
+        <item name="android:windowBackground">@color/background_dialog</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@style/Window.DialogAnimation</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="Window.DialogAnimation" parent="@android:style/Animation.Activity">
+        <item name="android:windowEnterAnimation">@anim/common_fade_in</item>
+        <item name="android:windowExitAnimation">@anim/common_fade_out</item>
+    </style>
+
+    <style name="textview">
+        <item name="android:background">@color/white_caocao</item>
+        <item name="android:textSize">@dimen/all_text_size</item>
+        <item name="android:textColor">@color/black_baozheng</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/all_bounced_spacing</item>
+    </style>
+
+    <style name="editText_new" parent="view_base">
+        <item name="android:background">@drawable/selector_white_background_stroke</item>
+        <item name="android:padding">@dimen/et_padding</item>
+        <item name="android:saveEnabled">false</item>
+        <item name="android:gravity">center|left</item>
+        <item name="android:textSize">@dimen/et_textsize</item>
+        <item name="android:textColorHint">@color/hint</item>
+    </style>
+
+    <style name="button" parent="view_base">
+        <item name=" android:background">@drawable/red_border</item>
+        <item name=" android:saveEnabled">false</item>
+        <item name="android:textSize">@dimen/et_textsize</item>
+        <item name=" android:textColor">@color/white_caocao</item>
+        <item name="android:textColorHint">@color/hint</item>
+    </style>
+
+    <style name="button_passive">
+        <item name="android:background">@drawable/selector_gradient_gray_button_background</item>
+        <item name="android:textColor">@drawable/selector_gray_button_text_color</item>
+        <item name="android:textSize">@dimen/all_text_size</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="button_positive">
+        <item name="android:background">@drawable/selector_guanyu_lvzhi_button_background</item>
+        <item name="android:textColor">@color/white_caocao</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/all_text_size</item>
+        <item name="android:focusable">false</item>
+        <item name="android:focusableInTouchMode">false</item>
+    </style>
+
+    <style name="searchBarEditor">
+        <item name="android:drawableStart">@mipmap/ic_search</item>
+        <item name="android:drawablePadding">@dimen/all_spacing</item>
+        <item name="android:paddingStart">@dimen/all_padding</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:maxLength">20</item>
+        <item name="android:background">@drawable/shape_gray_r1</item>
+        <item name="android:imeOptions">actionSearch</item>
+        <item name="android:textSize">@dimen/all_body_size</item>
+        <item name="android:textColor">@color/black_baozheng</item>
+        <item name="android:textColorHint">@color/black_likui</item>
+    </style>
+
+    <style name="editText" parent="view_base">
+        <item name="android:background">@drawable/selector_white_background_stroke</item>
+        <item name="android:padding">@dimen/et_padding</item>
+        <item name="android:saveEnabled">false</item>
+        <item name="android:gravity">center|left</item>
+        <item name="android:textSize">@dimen/et_textsize</item>
+        <item name="android:textColorHint">@color/hint</item>
+    </style>
+
+    <style name="view_base" parent="android:ButtonBar">
+        <item name="android:layout_height">@dimen/et_height</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginLeft">@dimen/all_margin_left</item>
+        <item name="android:layout_marginRight">@dimen/all_margin_left</item>
+    </style>
+</resources>

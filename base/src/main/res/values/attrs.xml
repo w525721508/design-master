@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TitleView">
+        <attr name="title_text" format="string" localization="suggested" />
+        <attr name="title_leftbutton_back" format="boolean" />
+        <attr name="title_leftbutton_show" format="boolean" />
+        <attr name="title_rightbutton_show" format="boolean" />
+
+    </declare-styleable>
+</resources>

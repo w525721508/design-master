@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="onClickListener"
+            type="design.root.base.util.OnClickListener"></variable>
+    </data>
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                 xmlns:tools="http://schemas.android.com/tools"
+                                                 android:layout_width="match_parent"
+                                                 android:layout_height="match_parent">
+
+        <design.root.base.ui.view.TitleView
+            android:id="@+id/ic_title"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:title_text="标题"/>
+
+        <FrameLayout
+            android:id="@+id/fl"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ic_title"></FrameLayout>
+
+    </android.support.constraint.ConstraintLayout>
+</layout>
