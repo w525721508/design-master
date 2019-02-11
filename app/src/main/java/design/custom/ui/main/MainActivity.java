@@ -1,10 +1,6 @@
 package design.custom.ui.main;
 
-import android.support.design.widget.NavigationView;
-import android.support.v4.view.GravityCompat;
 import android.support.v4.view.ViewPager;
-import android.support.v4.widget.DrawerLayout;
-import android.view.MenuItem;
 
 import com.flyco.tablayout.listener.CustomTabEntity;
 import com.flyco.tablayout.listener.OnTabSelectListener;
@@ -12,19 +8,19 @@ import com.flyco.tablayout.listener.OnTabSelectListener;
 import java.util.ArrayList;
 import java.util.List;
 
-import design.custom.ui.main.adapter.FragmentViewAdapter;
 import design.custom.R;
-import design.root.base.base.BaseActivity;
-import design.root.base.base.BaseFragment;
-import design.root.base.entity.TabEntity;
+import design.custom.databinding.ActivityMainBinding;
+import design.custom.ui.main.adapter.FragmentViewAdapter;
 import design.custom.ui.main.fragment.IndexFragment;
 import design.custom.ui.main.fragment.MyFragment;
 import design.custom.ui.main.fragment.OrderFragment;
-import design.custom.databinding.ActivityMainBinding;
+import design.root.base.base.BaseActivity;
+import design.root.base.base.BaseFragment;
+import design.root.base.entity.TabEntity;
 
 
 public class MainActivity extends BaseActivity<MainPresenter, MainModel, ActivityMainBinding>
-        implements NavigationView.OnNavigationItemSelectedListener, MainContract.View {
+        implements MainContract.View {
     private FragmentViewAdapter fragmentViewAdapter;
     private int[] titleInts = {R.string.menu_index, R.string.menu_order, R.string.menu_myself};
     private int[] unSelectIconList = {R.mipmap.icon_menu_cashier_0, R.mipmap.icon_menu_service_0, R
@@ -46,8 +42,6 @@ public class MainActivity extends BaseActivity<MainPresenter, MainModel, Activit
 
     @Override
     public void initView() {
-        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
-        navigationView.setNavigationItemSelectedListener(this);
         List<BaseFragment> list = new ArrayList<>();
         list.add(new IndexFragment());
         list.add(new OrderFragment());
@@ -80,8 +74,7 @@ public class MainActivity extends BaseActivity<MainPresenter, MainModel, Activit
                 () {
 
             @Override
-            public void onPageScrolled(int position, float positionOffset, int
-                    positionOffsetPixels) {
+            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
 
             }
 
@@ -97,30 +90,6 @@ public class MainActivity extends BaseActivity<MainPresenter, MainModel, Activit
         });
     }
 
-
-    @SuppressWarnings("StatementWithEmptyBody")
-    @Override
-    public boolean onNavigationItemSelected(MenuItem item) {
-        // Handle navigation view item clicks here.
-        int i = item.getItemId();
-        if (i == R.id.nav_camera) {
-
-        } else if (i == R.id.nav_gallery) {
-
-        } else if (i == R.id.nav_slideshow) {
-
-        } else if (i == R.id.nav_manage) {
-
-        } else if (i == R.id.nav_chage_pwd) {
-
-        } else if (i == R.id.nav_check_update) {
-
-        } else if (i == R.id.nav_log_out) {
-
-        }
-        ((DrawerLayout) findViewById(R.id.drawer_layout)).closeDrawer(GravityCompat.START);
-        return true;
-    }
 
     @Override
     public void error(String errorMsg) {
