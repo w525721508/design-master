@@ -4,6 +4,7 @@ import com.blankj.utilcode.util.LogUtils;
 
 import java.util.List;
 
+import design.root.base.App;
 import design.root.base.Constant;
 import design.root.base.api.ApiFactory;
 import design.root.base.db.DbHelper;
@@ -29,9 +30,9 @@ public class LoginModel extends LoginContract.Model {
         user.setSex("保密");
         user.toAddData();
         if (Constant.SYSTEM.NEEDSERVER) {
-            ApiFactory.UserApi.superUser(user).subscribe(new Consumer<String>() {
+            ApiFactory.UserApi.registered(user).subscribe(new Consumer<UserEntity>() {
                 @Override
-                public void accept(String s) throws Exception {
+                public void accept(UserEntity s) throws Exception {
                     netCallBack.succ(s);
                 }
             }, throwable -> {
@@ -82,7 +83,6 @@ public class LoginModel extends LoginContract.Model {
     public void changePwd(String username, String PwdOne, String PwdTwo, NetCallBack netCallBack) {
         UserEntity user = new UserEntity();
         user.setUsername(username);
-        user.setId(DbHelper.getInstance().queryUserNameToList(user).get(0).getId());
         user.setPassword(PwdTwo);
         user.setAge("15");
         user.setMobile("10086");
@@ -90,15 +90,16 @@ public class LoginModel extends LoginContract.Model {
         user.toUpdateData();
 
         if (Constant.SYSTEM.NEEDSERVER) {
-            ApiFactory.UserApi.superUser(user).subscribe(new Consumer<String>() {
+            ApiFactory.UserApi.changepwd(username, PwdOne, PwdTwo, App.instance.APPID).subscribe(new Consumer<UserEntity>() {
                 @Override
-                public void accept(String s) throws Exception {
+                public void accept(UserEntity s) throws Exception {
                     netCallBack.succ(s);
                 }
             }, throwable -> {
                 netCallBack.error(throwable.getMessage());
             });
         } else {
+            user.setId(DbHelper.getInstance().queryUserNameToList(user).get(0).getId());
             if (DbHelper.getInstance().updateUserEntity(user)) {
                 netCallBack.succ("");
             } else {

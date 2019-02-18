@@ -25,6 +25,12 @@ public class UserEntity extends BaseEntity {
     private String sex;
     @ColumnInfo(name = "age")
     private String age;
+    private int type;
+    private String email;
+    private String name;
+    private String shenfenzheng;
+    //备注
+    private String note;
 
     /**
      * 表名
@@ -93,6 +99,46 @@ public class UserEntity extends BaseEntity {
 
     public void setAge(String age) {
         this.age = age;
+    }
+
+    public int getType() {
+        return type;
+    }
+
+    public void setType(int type) {
+        this.type = type;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getShenfenzheng() {
+        return shenfenzheng;
+    }
+
+    public void setShenfenzheng(String shenfenzheng) {
+        this.shenfenzheng = shenfenzheng;
+    }
+
+    public String getNote() {
+        return note;
+    }
+
+    public void setNote(String note) {
+        this.note = note;
     }
 
     @Override

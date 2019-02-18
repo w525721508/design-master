@@ -7,6 +7,7 @@ import design.root.base.entity.UserEntity;
 import io.reactivex.Observable;
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.schedulers.Schedulers;
+import retrofit2.http.Query;
 
 /**
  * Created by Administrator on 2018/2/1.
@@ -21,11 +22,15 @@ public class ApiFactory {
 
     public static class UserApi {
         public static Observable<UserEntity> login(UserEntity userEntity) {
-            return obFactory(Api.getInstance().apiService.login(userEntity));
+            return obFactory(Api.getInstance().apiService.sign(userEntity));
         }
 
-        public static Observable<String> superUser(UserEntity user) {
-            return obFactory(Api.getInstance().apiService.superUser(user));
+        public static Observable<UserEntity> registered(UserEntity user) {
+            return obFactory(Api.getInstance().apiService.registered(user));
+        }
+
+        public static Observable<UserEntity> changepwd(String userName, String oldPassword, String newPassword, String appId) {
+            return obFactory(Api.getInstance().apiService.changepassword(userName, oldPassword, newPassword, appId));
         }
     }
 

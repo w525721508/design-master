@@ -34,9 +34,9 @@ public class LoginPresenter extends LoginContract.Presenter {
         if (mModel.isNull(userName, PwdOne, pwdTwo)) {
             mView.showToast("注册数据不能为空");
         } else {
-            mModel.register(userName, PwdOne, new NetCallBack<String>() {
+            mModel.register(userName, PwdOne, new NetCallBack<UserEntity>() {
                 @Override
-                public void succ(String userEntity) {
+                public void succ(UserEntity userEntity) {
                     mView.registerSucc("注册成功");
                 }
 
