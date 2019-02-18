@@ -46,7 +46,6 @@ public class MainActivity extends BaseActivity<MainPresenter, MainModel, Activit
         list.add(new IndexFragment());
         list.add(new OrderFragment());
         list.add(new MyFragment());
-
         fragmentViewAdapter = new FragmentViewAdapter(list, getSupportFragmentManager());
         mViewBinding.fragmentContainer.setAdapter(fragmentViewAdapter);
         initMenu();
