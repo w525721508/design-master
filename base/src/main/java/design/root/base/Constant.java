@@ -7,7 +7,7 @@ package design.root.base;
 public class Constant {
     //API 网址
 //    public static final String API_HOST = "https://api.readhub.me";
-    public static final String API_HOST = "http://123.206.47.186/";
+    public static final String API_HOST = "http://192.168.0.110:8888/";
 
     public final class API_BUILDER {
         public static final int WRITE_TIMEOUT = 2;
