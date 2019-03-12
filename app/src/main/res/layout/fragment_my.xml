@@ -13,21 +13,132 @@
         android:layout_height="match_parent"
         android:background="@color/white_caocao"
         android:gravity="center"
-        android:orientation="vertical"
-        >
+        android:orientation="vertical">
 
         <include
             android:id="@+id/ic"
             layout="@layout/title"
             android:background="@drawable/up_down_line_gray"></include>
 
-        <TextView
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:text="我的"/>
+            android:layout_height="match_parent">
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:text="用户名："
+                        android:textSize="16dp"/>
+
+                    <TextView
+                        android:id="@+id/tvMyUserName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:text="用户名"
+                        android:textSize="16dp"/>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_margin="5dp"
+                    android:background="@color/color_666666"></View>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:text="手机："
+                        android:textSize="16dp"/>
+
+                    <TextView
+                        android:id="@+id/tvMyMobile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:text="10086"
+                        android:textSize="16dp"/>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_margin="5dp"
+                    android:background="@color/color_666666"></View>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:text="性别："
+                        android:textSize="16dp"/>
+
+                    <TextView
+                        android:id="@+id/tvMySex"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:text="女"
+                        android:textSize="16dp"/>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_margin="5dp"
+                    android:background="@color/color_666666"></View>
+
+                <Button
+                    android:id="@+id/btnMyLogout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/all_margin_left"
+                    android:layout_marginRight="@dimen/all_margin_left"
+                    android:layout_marginTop="@dimen/et_margin_logo"
+                    android:background="@drawable/red_border"
+                    android:imeOptions="actionDone"
+                    android:onClick="@{onClickListener}"
+                    android:text="切换账户"
+                    android:textColor="@color/white_caocao"
+                    android:textSize="@dimen/et_textsize"/>
+
+                <Button
+                    android:id="@+id/btn_close"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/all_margin_left"
+                    android:layout_marginRight="@dimen/all_margin_left"
+                    android:layout_marginTop="@dimen/et_margin_logo"
+                    android:background="@drawable/red_border"
+                    android:imeOptions="actionDone"
+                    android:onClick="@{onClickListener}"
+                    android:text="退出软件"
+                    android:textColor="@color/white_caocao"
+                    android:textSize="@dimen/et_textsize"/>
+            </LinearLayout>
+        </ScrollView>
     </LinearLayout>
 
 
