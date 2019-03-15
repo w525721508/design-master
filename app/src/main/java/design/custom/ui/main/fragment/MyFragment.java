@@ -23,7 +23,7 @@ public class MyFragment extends BaseFragment<MainPresenter, FragmentMyBinding> {
 
     @Override
     public void initView() {
-        mViewBinding.ic.tvTitle.setText("我的");
+        mViewBinding.ic.tvTitle.setText(R.string.menu_myself);
         mViewBinding.tvMyMobile.setText(Global.userEntity.getMobile());
         mViewBinding.tvMySex.setText(Global.userEntity.getSex());
         mViewBinding.tvMyUserName.setText(Global.userEntity.getUsername());

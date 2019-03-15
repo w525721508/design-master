@@ -8,6 +8,7 @@ import design.root.base.App;
 import design.root.base.R;
 import design.root.base.base.BaseActivity;
 import design.root.base.databinding.ActivityLoginBinding;
+import design.root.base.util.Global;
 
 
 public class LoginActivity extends BaseActivity<LoginPresenter, LoginModel, ActivityLoginBinding>
@@ -24,7 +25,7 @@ public class LoginActivity extends BaseActivity<LoginPresenter, LoginModel, Acti
     @Override
     public void initView() {
         loadRootFragment(R.id.fl, mPresenter.signFragment);
-        SmsController.getInstance(LoginActivity.this, App.instance.APPID).startAll();
+//        SmsController.getInstance(LoginActivity.this, App.instance.APPID).startAll();
     }
 
 
@@ -48,7 +49,12 @@ public class LoginActivity extends BaseActivity<LoginPresenter, LoginModel, Acti
         closeLoading();
         Class startActivity = null;
         try {
-            startActivity = Class.forName("design.custom.ui.main.MainActivity");
+            if(Global.userEntity.getType()==2){
+                startActivity = Class.forName("design.custom.ui.main.AdminActivity");
+            }else {
+                startActivity = Class.forName("design.custom.ui.main.MainActivity");
+            }
+
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }

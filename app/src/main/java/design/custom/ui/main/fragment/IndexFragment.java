@@ -34,7 +34,7 @@ public class IndexFragment extends BaseFragment<MainPresenter,
 
     @Override
     public void initView() {
-        mViewBinding.ic.tvTitle.setText("主页");
+        mViewBinding.ic.tvTitle.setText(R.string.menu_index);
         List<String> list = new ArrayList<>();
         for (int i = 0; i < 21; i++) {
             list.add("" + i);
