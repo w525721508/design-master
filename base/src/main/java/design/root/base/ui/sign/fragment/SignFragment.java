@@ -13,7 +13,7 @@ import design.root.base.ui.sign.LoginPresenter;
 
 
 /**
- * Created by Administrator on 2018/1/24.
+ *
  */
 
 public class SignFragment extends BaseFragment<LoginPresenter, FragmentSignBinding> {

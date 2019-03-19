@@ -11,7 +11,6 @@ import design.root.base.util.InstanceUtil;
 import io.reactivex.functions.Function;
 
 /**
- * Created by Administrator on 2018/2/1.
  */
 
 @RequiresApi(api = Build.VERSION_CODES.N)

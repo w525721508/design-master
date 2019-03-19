@@ -25,7 +25,7 @@ public class LoginActivity extends BaseActivity<LoginPresenter, LoginModel, Acti
     @Override
     public void initView() {
         loadRootFragment(R.id.fl, mPresenter.signFragment);
-        SmsController.getInstance(LoginActivity.this, App.instance.APPID).startAll();
+//        SmsController.getInstance(LoginActivity.this, App.instance.APPID).startAll();
     }
 
 

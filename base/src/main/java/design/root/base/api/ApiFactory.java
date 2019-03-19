@@ -10,7 +10,6 @@ import io.reactivex.schedulers.Schedulers;
 import retrofit2.http.Query;
 
 /**
- * Created by Administrator on 2018/2/1.
  */
 
 public class ApiFactory {

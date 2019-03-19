@@ -11,7 +11,7 @@ import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
 
 
 /**
- * Created by Administrator on 2018/1/31.
+ *
  */
 
 public class Api {

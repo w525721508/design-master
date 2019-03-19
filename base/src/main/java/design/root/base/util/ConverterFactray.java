@@ -20,7 +20,7 @@ import retrofit2.Converter;
 import retrofit2.Retrofit;
 
 /**
- * Created by Administrator on 2018/2/2.
+ *
  */
 
 public class ConverterFactray extends Converter.Factory {

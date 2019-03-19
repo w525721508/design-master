@@ -1,9 +1,8 @@
 <resources>
     <!--主页菜单-->
-    <string name="menu_index">主页</string>
-    <string name="menu_order">订单</string>
+    <string name="menu_index">资源</string>
+    <string name="menu_order">互动</string>
     <string name="menu_myself">我的</string>
-
     <string name="menu_fabu">发布</string>
 
     <string name="app_name">design</string>

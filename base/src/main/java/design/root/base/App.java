@@ -5,7 +5,6 @@ import android.app.Application;
 import com.blankj.utilcode.util.Utils;
 
 /**
- * Created by Administrator on 2018/1/22.
  */
 
 public class App extends Application {

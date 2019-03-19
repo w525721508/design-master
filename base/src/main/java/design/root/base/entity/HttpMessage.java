@@ -1,7 +1,7 @@
 package design.root.base.entity;
 
 /**
- * Created by Administrator on 2018/2/1.
+ *
  */
 
 public class HttpMessage<T> {

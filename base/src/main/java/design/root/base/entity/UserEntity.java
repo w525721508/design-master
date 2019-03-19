@@ -8,7 +8,7 @@ import android.arch.persistence.room.PrimaryKey;
 import design.root.base.base.BaseEntity;
 
 /**
- * Created by Administrator on 2018/1/25.
+ *
  */
 
 @Entity(tableName = "users")

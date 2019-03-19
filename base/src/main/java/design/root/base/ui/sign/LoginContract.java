@@ -7,7 +7,7 @@ import design.root.base.base.BaseView;
 import design.root.base.ui.interfaces.NetCallBack;
 
 /**
- * Created by Administrator on 2018/1/22.
+ *
  */
 
 public interface LoginContract {

@@ -13,7 +13,6 @@ import design.root.base.R;
 import java.util.List;
 
 /**
- * Created by Administrator on 2018/2/7.
  */
 
 public abstract class BaseAdapter<T, B extends ViewDataBinding> extends BaseQuickAdapter<T,

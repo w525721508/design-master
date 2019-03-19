@@ -10,7 +10,7 @@ import design.root.base.ui.sign.fragment.SignFragment;
 import design.root.base.util.Global;
 
 /**
- * Created by Administrator on 2018/1/22.
+ *
  */
 
 public class LoginPresenter extends LoginContract.Presenter {

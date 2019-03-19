@@ -7,7 +7,6 @@ import design.custom.ui.main.MainPresenter;
 import design.custom.databinding.FragmentOrderBinding;
 
 /**
- * Created by Administrator on 2018/1/26.
  */
 
 public class OrderFragment extends BaseFragment<MainPresenter, FragmentOrderBinding> {
@@ -18,6 +17,6 @@ public class OrderFragment extends BaseFragment<MainPresenter, FragmentOrderBind
 
     @Override
     public void initView() {
-        mViewBinding.ic.tvTitle.setText("订单");
+        mViewBinding.ic.tvTitle.setText(R.string.menu_order);
     }
 }

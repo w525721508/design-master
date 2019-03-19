@@ -3,7 +3,7 @@ package design.root.base.api;
 import java.io.IOException;
 
 /**
- * Created by Administrator on 2018/2/1.
+ *
  */
 
 public class ApiException {

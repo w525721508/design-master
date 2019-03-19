@@ -16,7 +16,7 @@ import com.blankj.utilcode.util.KeyboardUtils;
 import me.yokeyword.fragmentation.SupportFragment;
 
 /**
- * Created by Administrator on 2018/1/24.
+ *
  */
 
 public abstract class BaseFragment<P extends BasePresenter, B extends

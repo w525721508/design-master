@@ -14,7 +14,7 @@ import design.root.base.ui.sign.LoginContract;
 import io.reactivex.functions.Consumer;
 
 /**
- * Created by Administrator on 2018/1/22.
+ *
  */
 
 public class LoginModel extends LoginContract.Model {

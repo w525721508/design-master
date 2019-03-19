@@ -5,7 +5,6 @@ import design.root.base.base.BasePresenter;
 import design.root.base.base.BaseView;
 
 /**
- * Created by Administrator on 2018/1/22.
  */
 
 public interface MainContract {

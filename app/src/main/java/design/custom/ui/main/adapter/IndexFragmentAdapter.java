@@ -11,7 +11,6 @@ import design.root.base.databinding.FragmentSignItemBinding;
 import design.root.base.entity.ItemContent;
 
 /**
- * Created by Administrator on 2018/2/7.
  */
 
 public class IndexFragmentAdapter extends BaseAdapter<String, FragmentSignItemBinding> {

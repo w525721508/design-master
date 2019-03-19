@@ -3,7 +3,6 @@ package design.root.base.base;
 import android.text.TextUtils;
 
 /**
- * Created by Administrator on 2018/1/22.
  */
 
 public class BaseModel {

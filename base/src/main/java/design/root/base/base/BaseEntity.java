@@ -3,7 +3,7 @@ package design.root.base.base;
 import design.root.base.App;
 
 /**
- * Created by Administrator on 2018/1/31.
+ *
  */
 
 public class BaseEntity extends SuperBean {

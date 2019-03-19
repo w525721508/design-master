@@ -5,7 +5,7 @@ import android.arch.persistence.room.RoomDatabase;
 
 
 /**
- * Created by Administrator on 2018/1/25.
+ *
  */
 @Database(entities = {design.root.base.entity.UserEntity.class}, version = 1, exportSchema = false)
 public abstract class AppDatabase extends RoomDatabase {

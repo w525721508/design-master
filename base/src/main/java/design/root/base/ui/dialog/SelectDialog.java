@@ -9,7 +9,7 @@ import design.root.base.databinding.DialogSelectBinding;
 
 
 /**
- * Created by Administrator on 2018/1/24.
+ *
  */
 
 public class SelectDialog extends BaseDialog<DialogSelectBinding> {

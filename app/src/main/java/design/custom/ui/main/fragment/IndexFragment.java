@@ -19,7 +19,6 @@ import design.custom.ui.main.adapter.IndexFragmentAdapter;
 import design.custom.databinding.FragmentIndexBinding;
 
 /**
- * Created by Administrator on 2018/1/26.
  */
 
 public class IndexFragment extends BaseFragment<MainPresenter,
@@ -34,7 +33,7 @@ public class IndexFragment extends BaseFragment<MainPresenter,
 
     @Override
     public void initView() {
-        mViewBinding.ic.tvTitle.setText("主页");
+        mViewBinding.ic.tvTitle.setText(R.string.menu_index);
         List<String> list = new ArrayList<>();
         for (int i = 0; i < 21; i++) {
             list.add("" + i);

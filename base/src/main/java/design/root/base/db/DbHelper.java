@@ -9,7 +9,7 @@ import design.root.base.App;
 import design.root.base.entity.UserEntity;
 
 /**
- * Created by Administrator on 2018/1/26.
+ *
  */
 
 public class DbHelper {

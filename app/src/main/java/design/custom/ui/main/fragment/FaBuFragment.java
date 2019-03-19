@@ -6,18 +6,21 @@ import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.LinearLayoutManager;
 import android.view.View;
 
+import com.blankj.utilcode.util.ActivityUtils;
 import com.chad.library.adapter.base.BaseQuickAdapter;
 
 import java.util.ArrayList;
 
 import design.custom.R;
 import design.custom.databinding.FragmentFabuBinding;
+import design.custom.ui.main.AddActivity;
 import design.custom.ui.main.MainPresenter;
 import design.custom.ui.main.adapter.AdminItemAdapter;
 import design.root.base.base.BaseFragment;
 import design.root.base.entity.ItemContent;
 import design.root.base.ui.dialog.PromptDialog;
 import design.root.base.util.OnClickListener;
+
 
 
 /**
@@ -27,6 +30,7 @@ public class FaBuFragment extends BaseFragment<MainPresenter, FragmentFabuBindin
     AdminItemAdapter indexFragmentAdapter;
 
     @Override
+
     protected int getLayoutId() {
         return R.layout.fragment_fabu;
     }
@@ -86,6 +90,7 @@ public class FaBuFragment extends BaseFragment<MainPresenter, FragmentFabuBindin
                     }
                     break;
                     default: {
+                        ActivityUtils.startActivity(AddActivity.class);
                     }
                     break;
                 }

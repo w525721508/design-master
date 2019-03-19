@@ -10,7 +10,6 @@ import java.util.List;
 import design.root.base.base.BaseFragment;
 
 /**
- * Created by Administrator on 2018/1/26.
  */
 
 public class FragmentViewAdapter extends FragmentPagerAdapter {

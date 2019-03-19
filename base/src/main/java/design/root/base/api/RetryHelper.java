@@ -11,7 +11,7 @@ import io.reactivex.ObservableSource;
 import io.reactivex.functions.Function;
 
 /**
- * Created by Administrator on 2018/2/1.
+ *
  */
 
 public class RetryHelper implements Function<Observable<Throwable>, ObservableSource<?>> {

@@ -37,7 +37,7 @@ import io.reactivex.functions.Consumer;
 import io.reactivex.functions.Function;
 
 /**
- * Created by Administrator on 2018/1/23.
+ *
  */
 
 public abstract class BaseDialog<B extends ViewDataBinding> extends AppCompatDialogFragment {

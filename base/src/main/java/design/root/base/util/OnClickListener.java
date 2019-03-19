@@ -3,7 +3,7 @@ package design.root.base.util;
 import android.view.View;
 
 /**
- * Created by Administrator on 2017/12/2.
+ *
  */
 
 public abstract class OnClickListener implements View.OnClickListener {

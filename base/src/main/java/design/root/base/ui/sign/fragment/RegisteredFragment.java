@@ -10,7 +10,7 @@ import design.root.base.ui.sign.LoginPresenter;
 
 
 /**
- * Created by Administrator on 2018/1/25.
+ *
  */
 
 public class RegisteredFragment extends BaseFragment<LoginPresenter, FragmentRegisteredBinding> {
