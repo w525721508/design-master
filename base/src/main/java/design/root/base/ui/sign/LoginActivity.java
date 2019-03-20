@@ -41,6 +41,7 @@ public class LoginActivity extends BaseActivity<LoginPresenter, LoginModel, Acti
     public void registerSucc(String toastMsg) {
         closeLoading();
         ToastUtils.showLong(toastMsg);
+        mPresenter.showStr("登录");
         pop();
     }
 
@@ -67,7 +68,13 @@ public class LoginActivity extends BaseActivity<LoginPresenter, LoginModel, Acti
     public void chagePwdSucc() {
         closeLoading();
         ToastUtils.showLong("修改成功");
+        mPresenter.showStr("登录");
         pop();
+    }
+
+    @Override
+    public void changeTitle(String str) {
+        mViewBinding.tvTitle.setText(str);
     }
 
 

@@ -30,11 +30,11 @@ public class LoginPresenter extends LoginContract.Presenter {
     }
 
     @Override
-    public void register(String userName, String PwdOne, String pwdTwo) {
-        if (mModel.isNull(userName, PwdOne, pwdTwo)) {
+    public void register(UserEntity userEntity) {
+        if (mModel.isNull(userEntity.getUsername(), userEntity.getPassword())) {
             mView.showToast("注册数据不能为空");
         } else {
-            mModel.register(userName, PwdOne, new NetCallBack<UserEntity>() {
+            mModel.register(userEntity, new NetCallBack<UserEntity>() {
                 @Override
                 public void succ(UserEntity userEntity) {
                     mView.registerSucc("注册成功");
@@ -83,5 +83,10 @@ public class LoginPresenter extends LoginContract.Presenter {
                 }
             });
         }
+    }
+
+    @Override
+    public void showStr(String str) {
+        mView.changeTitle(str);
     }
 }

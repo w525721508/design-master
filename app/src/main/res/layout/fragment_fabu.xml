@@ -30,7 +30,6 @@
                 android:layout_height="50dp"
                 android:orientation="horizontal"
                 android:visibility="gone">
-                android:orientation="horizontal">
 
                 <EditText
                     android:id="@+id/et_time"

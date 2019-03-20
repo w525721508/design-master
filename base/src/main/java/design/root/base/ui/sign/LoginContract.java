@@ -4,6 +4,7 @@ package design.root.base.ui.sign;
 import design.root.base.base.BaseModel;
 import design.root.base.base.BasePresenter;
 import design.root.base.base.BaseView;
+import design.root.base.entity.UserEntity;
 import design.root.base.ui.interfaces.NetCallBack;
 
 /**
@@ -21,12 +22,14 @@ public interface LoginContract {
         void signSucc();
 
         //修改密码成功
-        void chagePwdSucc();
+        void chagePwdSucc();   //修改密码成功
+
+        void changeTitle(String str);
     }
 
     abstract class Model extends BaseModel {
         //注册数据操作
-        public abstract void register(String userName, String PwdOne, NetCallBack netCallBack);
+        public abstract void register(UserEntity userEntity, NetCallBack netCallBack);
 
         //登录验证操作
         public abstract void sign(String userName, String Pwd, NetCallBack netCallBack);
@@ -38,13 +41,15 @@ public interface LoginContract {
 
     abstract class Presenter extends BasePresenter<View, Model> {
         //注册
-        public abstract void register(String userName, String PwdOne, String pwdTwo);
+        public abstract void register(UserEntity userEntity);
 
         //登录
         public abstract void sign(String userName, String Pwd);
 
         //修改密码
         public abstract void changePwd(String username, String PwdOne, String PwdTwo);
+
+        public abstract void showStr(String str);
     }
 
 

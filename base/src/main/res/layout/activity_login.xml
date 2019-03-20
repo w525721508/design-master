@@ -8,25 +8,27 @@
             type="design.root.base.util.OnClickListener"></variable>
     </data>
 
-    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                                                 xmlns:tools="http://schemas.android.com/tools"
-                                                 android:layout_width="match_parent"
-                                                 android:layout_height="match_parent">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-        <design.root.base.ui.view.TitleView
-            android:id="@+id/ic_title"
+        <TextView
+            android:id="@+id/tv_title"
             android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            app:title_text="标题"/>
+            android:layout_height="50dp"
+            android:background="@color/c23C991"
+            android:gravity="center"
+            android:text="标题"
+            android:textColor="@color/white_caocao"
+            android:textSize="16sp"/>
 
         <FrameLayout
             android:id="@+id/fl"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/ic_title"></FrameLayout>
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            ></FrameLayout>
 
-    </android.support.constraint.ConstraintLayout>
+    </LinearLayout>
 </layout>

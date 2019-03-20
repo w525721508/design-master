@@ -5,25 +5,27 @@ import android.graphics.drawable.Drawable;
 import android.view.View;
 import android.widget.EditText;
 
-
 import design.root.base.R;
 import design.root.base.base.BaseFragment;
-import design.root.base.databinding.FragmentSignBinding;
+import design.root.base.databinding.FragmentSign3Binding;
 import design.root.base.ui.sign.LoginPresenter;
+import design.root.base.util.Global;
 
 
 /**
  *
  */
 
-public class SignFragment extends BaseFragment<LoginPresenter, FragmentSignBinding> {
+public class SignFragment extends BaseFragment<LoginPresenter, FragmentSign3Binding> {
     @Override
     protected int getLayoutId() {
-        return R.layout.fragment_sign;
+        return R.layout.fragment_sign3;
     }
 
     @Override
     public void initView() {
+        mPresenter.showStr("登录");
+        initUi();
         mViewBinding.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -57,17 +59,27 @@ public class SignFragment extends BaseFragment<LoginPresenter, FragmentSignBindi
 
     }
 
+    private void initUi() {
+        if (Global.nowTheme == 3) {
+            mViewBinding.tvSignUp.setTextColor(getResources().getColor(R.color.c23C991));
+        } else {
+            mViewBinding.tvSignUp.setTextColor(getResources().getColor(R.color.black_baozheng));
+        }
+    }
+
 
     private void switchIcon(EditText view, Boolean b, int iconIdOne, int iconTwo) {
-        Resources res = getResources();
-        Drawable img_off;
-        if (b) {
-            img_off = res.getDrawable(iconIdOne);
-        } else {
-            img_off = res.getDrawable(iconTwo);
+        if (Global.nowTheme == 1) {
+            Resources res = getResources();
+            Drawable img_off;
+            if (b) {
+                img_off = res.getDrawable(iconIdOne);
+            } else {
+                img_off = res.getDrawable(iconTwo);
+            }
+            img_off.setBounds(0, 0, img_off.getMinimumWidth(), img_off.getMinimumHeight());
+            view.setCompoundDrawables(img_off, null, null, null);
         }
-        img_off.setBounds(0, 0, img_off.getMinimumWidth(), img_off.getMinimumHeight());
-        view.setCompoundDrawables(img_off, null, null, null);
     }
 
 }

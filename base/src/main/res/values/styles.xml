@@ -103,7 +103,6 @@
         <item name="android:textSize">@dimen/et_textsize</item>
         <item name="android:textColorHint">@color/hint</item>
     </style>
-
     <style name="view_base" parent="android:ButtonBar">
         <item name="android:layout_height">@dimen/et_height</item>
         <item name="android:layout_width">match_parent</item>

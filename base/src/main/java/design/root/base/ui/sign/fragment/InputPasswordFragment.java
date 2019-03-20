@@ -8,27 +8,29 @@ import android.view.View;
 import android.widget.EditText;
 
 import design.root.base.R;
+import design.root.base.databinding.FragmentInputPassword3Binding;
 import design.root.base.databinding.FragmentInputPasswordBinding;
 import design.root.base.base.BaseFragment;
 import design.root.base.ui.sign.LoginPresenter;
+import design.root.base.util.Global;
 
 /**
  */
 public class InputPasswordFragment extends BaseFragment<LoginPresenter,
-        FragmentInputPasswordBinding> {
+        FragmentInputPassword3Binding> {
     private String onePwd;
     private String twoPwd;
-    //找回密码发验证码为1，注册发验证码为2
     int startway = -1;
 
     @Override
     public int getLayoutId() {
-        return R.layout.fragment_input_password;
+        return R.layout.fragment_input_password3;
     }
 
 
     @Override
     public void initView() {
+        mPresenter.showStr("修改密码");
         InputFilter[] inputFilter = new InputFilter[]{new InputFilter.LengthFilter(6)};
         mViewBinding.etOnePassword.setInputType(InputType.TYPE_CLASS_NUMBER | InputType
                 .TYPE_NUMBER_VARIATION_PASSWORD);
@@ -45,7 +47,7 @@ public class InputPasswordFragment extends BaseFragment<LoginPresenter,
 
             } else if (i == R.id.tv_existing_account) {
                 pop();
-
+                mPresenter.showStr("登录");
             }
         });
         mViewBinding.etPhone.setOnFocusChangeListener(new View.OnFocusChangeListener() {
@@ -73,14 +75,16 @@ public class InputPasswordFragment extends BaseFragment<LoginPresenter,
 
 
     private void switchIcon(EditText view, Boolean b, int iconIdOne, int iconTwo) {
-        Resources res = getResources();
-        Drawable img_off;
-        if (b) {
-            img_off = res.getDrawable(iconIdOne);
-        } else {
-            img_off = res.getDrawable(iconTwo);
+        if (Global.nowTheme == 1) {
+            Resources res = getResources();
+            Drawable img_off;
+            if (b) {
+                img_off = res.getDrawable(iconIdOne);
+            } else {
+                img_off = res.getDrawable(iconTwo);
+            }
+            img_off.setBounds(0, 0, img_off.getMinimumWidth(), img_off.getMinimumHeight());
+            view.setCompoundDrawables(img_off, null, null, null);
         }
-        img_off.setBounds(0, 0, img_off.getMinimumWidth(), img_off.getMinimumHeight());
-        view.setCompoundDrawables(img_off, null, null, null);
     }
 }

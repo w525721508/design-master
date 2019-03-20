@@ -21,10 +21,10 @@ public class LoginModel extends LoginContract.Model {
 
 
     @Override
-    public void register(String userName, String PwdOne, NetCallBack netCallBack) {
+    public void register(UserEntity userEntity, NetCallBack netCallBack) {
         UserEntity user = new UserEntity();
-        user.setUsername(userName);
-        user.setPassword(PwdOne);
+        user.setUsername(userEntity.getUsername());
+        user.setPassword(userEntity.getPassword());
         user.setAge("15");
         user.setMobile("10086");
         user.setSex("保密");
