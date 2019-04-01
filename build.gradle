@@ -2,9 +2,10 @@
 
 buildscript {
     repositories {
-        mavenCentral()
-        google()
-        jcenter(){url 'http://jcenter.bintray.com/'}
+        maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+        maven { url 'http://maven.aliyun.com/nexus/content/repositories/jcenter' }
+        maven { url 'http://maven.aliyun.com/nexus/content/repositories/google' }
+        maven { url 'http://maven.aliyun.com/nexus/content/repositories/gradle-plugin' }
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.0.1'
@@ -19,9 +20,10 @@ allprojects {
         flatDir {
             dirs 'libs'
         }
-        mavenCentral()
-        google()
-        jcenter(){url 'http://jcenter.bintray.com/'}
+        maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+        maven { url 'http://maven.aliyun.com/nexus/content/repositories/jcenter' }
+        maven { url 'http://maven.aliyun.com/nexus/content/repositories/google' }
+        maven { url 'http://maven.aliyun.com/nexus/content/repositories/gradle-plugin' }
         maven { url "https://jitpack.io" }
     }
 }
