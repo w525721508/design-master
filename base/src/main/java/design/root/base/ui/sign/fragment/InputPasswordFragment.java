@@ -17,14 +17,14 @@ import design.root.base.util.Global;
 /**
  */
 public class InputPasswordFragment extends BaseFragment<LoginPresenter,
-        FragmentInputPassword3Binding> {
+        FragmentInputPasswordBinding> {
     private String onePwd;
     private String twoPwd;
     int startway = -1;
 
     @Override
     public int getLayoutId() {
-        return R.layout.fragment_input_password3;
+        return R.layout.fragment_input_password;
     }
 
 

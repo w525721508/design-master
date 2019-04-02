@@ -18,10 +18,10 @@
             android:id="@+id/tv_title"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:background="@color/c23C991"
+            android:background="@color/white_caocao"
             android:gravity="center"
             android:text="标题"
-            android:textColor="@color/white_caocao"
+            android:textColor="@color/black_baozheng"
             android:textSize="16sp"/>
 
         <FrameLayout

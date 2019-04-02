@@ -7,7 +7,7 @@ import android.widget.EditText;
 
 import design.root.base.R;
 import design.root.base.base.BaseFragment;
-import design.root.base.databinding.FragmentSign3Binding;
+import design.root.base.databinding.FragmentSignBinding;
 import design.root.base.ui.sign.LoginPresenter;
 import design.root.base.util.Global;
 
@@ -16,10 +16,10 @@ import design.root.base.util.Global;
  *
  */
 
-public class SignFragment extends BaseFragment<LoginPresenter, FragmentSign3Binding> {
+public class SignFragment extends BaseFragment<LoginPresenter, FragmentSignBinding> {
     @Override
     protected int getLayoutId() {
-        return R.layout.fragment_sign3;
+        return R.layout.fragment_sign;
     }
 
     @Override

@@ -4,7 +4,7 @@ import android.view.View;
 
 import design.root.base.R;
 import design.root.base.base.BaseFragment;
-import design.root.base.databinding.FragmentRegistered3Binding;
+import design.root.base.databinding.FragmentRegisteredBinding;
 import design.root.base.entity.UserEntity;
 import design.root.base.ui.sign.LoginPresenter;
 
@@ -13,10 +13,10 @@ import design.root.base.ui.sign.LoginPresenter;
  *
  */
 
-public class RegisteredFragment extends BaseFragment<LoginPresenter, FragmentRegistered3Binding> {
+public class RegisteredFragment extends BaseFragment<LoginPresenter, FragmentRegisteredBinding> {
     @Override
     protected int getLayoutId() {
-        return R.layout.fragment_registered3;
+        return R.layout.fragment_registered;
     }
 
     @Override
