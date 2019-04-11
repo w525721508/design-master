@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="onClick"
+            type="android.view.View.OnClickListener"></variable>
+    </data>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="223.66dp"
+        android:gravity="center"
+        tools:context=".SignActivity">
+
+        <RelativeLayout
+            android:layout_width="266.67dp"
+            android:layout_height="223.66dp"
+            android:background="@color/all_transparent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/white_shape_radius"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:id="@+id/ll_bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="42.67dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/f8f8f8_shape_radius"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_no"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/button1"
+                        android:text="再想想"
+                        android:textColor="@color/white_caocao"/>
+
+                    <Button
+                        android:id="@+id/btn_yes"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/all_transparent"
+                        android:text="确认"
+                        android:textColor="@color/color_666666"
+                        android:visibility="gone"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/ll_bottom"
+                    android:layout_below="@+id/view"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/color_666666"></View>
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rv_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:background="@color/white_caocao"
+                android:gravity="center"
+                android:src="@mipmap/logo"
+                android:text="请选择坐席"
+                android:textColor="@color/c3B99FC"/>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</layout>

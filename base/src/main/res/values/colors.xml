@@ -17,12 +17,13 @@
     <color name="gray_huanggai">#afb9c3</color>
     <color name="gray_kongming">#dddddd</color>
     <color name="color_666666">#666666</color>
-    <color name="white_caocao">#ffffff</color>    <color name="color_333333">#333333</color>
+    <color name="white_caocao">#ffffff</color>
+    <color name="color_333333">#333333</color>
 
     <color name="black_zhangfei">#233142</color>
     <color name="black_baozheng">#121212</color>
     <color name="black_likui">#646464</color>
-<color name="c23C991">#23C991</color>
+    <color name="c23C991">#23C991</color>
     <color name="blue_yuefei">#50c1ff</color>
     <color name="blue_mawu">#3f75a2</color>
 
@@ -39,6 +40,8 @@
     <color name="golden_yuji">#f2e7d3</color>
 
     <color name="purple_yanqing">#6590e6</color>
+    <color name="c3B99FC">#3B99FC</color>
+    <color name="cffb000">#ffb000</color>
     <color name="hint">#DCDCDC</color>
 
     <!-- 半透明 -->
